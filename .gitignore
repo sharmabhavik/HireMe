@@ -1,0 +1,54 @@
+# ---------------------------------------------------------------------------
+# Root .gitignore for HireMe monorepo (backend/ Node API + frontend/ Vite app)
+# ---------------------------------------------------------------------------
+
+# Dependencies
+**/node_modules/
+
+# Production / build outputs
+**/dist/
+**/dist-ssr/
+**/build/
+**/.vite/
+
+# Coverage
+**/coverage/
+
+# Logs
+**/logs/
+**/*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Environment files (keep secrets out of git)
+**/.env
+**/.env.*
+!.env.example
+!.env.template
+
+# Credentials note (should never be committed)
+backend/new_credentials.md
+
+# OS / editor
+.DS_Store
+Thumbs.db
+
+# VS Code (keep shared workspace recommendations)
+.vscode/*
+!.vscode/extensions.json
+
+# JetBrains
+.idea/
+
+# Windows / Visual Studio cruft
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Optional: local caches
+**/.eslintcache
+**/.cache/
